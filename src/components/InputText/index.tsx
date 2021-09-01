@@ -1,12 +1,13 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
+import { TextField } from '@material-ui/core';
 
-type InputTextProps = {
+export type InputTextProps = {
   type?: string;
   label: string;
   id: string;
   variant?: 'standard' | 'outlined' | 'filled';
   defaultValue?: string;
+  children?: React.ReactNode;
 };
 
 export const InputText = ({

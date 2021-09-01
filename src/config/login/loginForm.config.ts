@@ -1,37 +1,34 @@
-import { InputText } from '../../components/InputText';
+import { InputText, InputTextProps } from '../../components/InputText';
+import { ILoginConfig } from '../../interfaces/loginConfig.interface';
 
-export const LOGIN_FORM_CONFIG = [
+export const LOGIN_FORM_CONFIG: ILoginConfig<InputTextProps>[] = [
   {
-    component: InputText,
+    Component: InputText,
     props: {
-			key: 1,
       label: 'Nombre',
       id: '1',
       variant: 'outlined',
     },
   },
   {
-    component: InputText,
+    Component: InputText,
     props: {
-			key: 2,
       label: 'Email',
       id: '2',
       variant: 'outlined',
     },
   },
   {
-    component: InputText,
+    Component: InputText,
     props: {
-			key: 3,
       label: 'Número de telefono',
       id: '3',
       variant: 'outlined',
     },
   },
   {
-    component: InputText,
+    Component: InputText,
     props: {
-			key: 4,
       type: 'password',
       label: 'Password',
       id: '4',
