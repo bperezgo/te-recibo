@@ -8,13 +8,13 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       '& .MuiTextField-root': {
-        margin: '0.3em 0',
-        width: '100%',
+        margin: '0.3em 0.3em',
+        width: 'calc(100% - 0.6em)',
       },
     },
     button: {
-      margin: '0.3em 0',
-      width: '100%',
+      margin: '2.0em 0.3em',
+      width: 'calc(100% - 0.6em)',
     },
   })
 );
