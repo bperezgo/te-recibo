@@ -1,6 +1,7 @@
 import { RouteConfig } from 'react-router-config';
-import { Home } from '../containers/Home';
-import { Login } from '../containers/Login';
+import { Home } from '../Home/view';
+import { Login } from '../Login/view';
+import { Signup } from '../Signup/view';
 
 export const appRoutes: RouteConfig[] = [
   {
@@ -14,5 +15,11 @@ export const appRoutes: RouteConfig[] = [
     path: '/login',
     exact: true,
     component: Login,
+  },
+  {
+    key: 3,
+    path: '/sign-up',
+    exact: true,
+    component: Signup,
   },
 ];
