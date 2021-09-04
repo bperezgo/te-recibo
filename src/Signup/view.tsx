@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button } from '@material-ui/core';
+import { Grid, Button } from '@material-ui/core';
 import { SIGNUP_FORM_CONFIG } from './config/signupForm.config';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
@@ -22,7 +22,12 @@ const useStyles = makeStyles((theme: Theme) =>
 export const Signup = () => {
   const classes = useStyles();
   return (
-    <Container>
+    <Grid
+      container
+      justify="center"
+      alignItems="center"
+      style={{ minHeight: '100vh' }}
+    >
       <form className={classes.root} noValidate autoComplete="off">
         {SIGNUP_FORM_CONFIG.map((element, key) => {
           const { Component } = element;
@@ -38,6 +43,6 @@ export const Signup = () => {
           </Link>
         </p>
       </form>
-    </Container>
+    </Grid>
   );
 };
