@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-export interface ILoginConfig<T> {
+export interface ISignupConfig<T> {
   Component: FC<T>;
   props: T;
 }

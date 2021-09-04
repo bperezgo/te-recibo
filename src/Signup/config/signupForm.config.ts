@@ -1,7 +1,7 @@
-import { InputText, InputTextProps } from '../../components/InputText';
-import { ILoginConfig } from '../../interfaces/loginConfig.interface';
+import { InputText, InputTextProps } from '../components/InputText';
+import { ISignupConfig } from '../interfaces/signupConfig.interface';
 
-export const LOGIN_FORM_CONFIG: ILoginConfig<InputTextProps>[] = [
+export const SIGNUP_FORM_CONFIG: ISignupConfig<InputTextProps>[] = [
   {
     Component: InputText,
     props: {
