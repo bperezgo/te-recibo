@@ -10,9 +10,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const dotenv = require('dotenv');
-
-dotenv.config();
+require('dotenv').config({ path: './.env' });
 
 const config = {
   entry: ['./src/index.tsx'],
