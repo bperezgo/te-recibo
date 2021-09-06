@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+	"engines": { "node": ">=14.0" },
+	"engineStrict": true,
   "scripts": {
-    "build": "webpack --mode production --config webpack.config.js",
-    "dev": "webpack serve --mode development --config webpack.config.dev.js",
+    "build": "NODE_ENV=production webpack --mode production --config webpack.config.js",
+    "dev": "NODE_ENV=development webpack serve --mode development --config webpack.config.dev.js",
     "lint": "eslint",
     "lint:fix": "eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
