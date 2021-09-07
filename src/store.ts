@@ -11,7 +11,6 @@ import thunk from 'redux-thunk';
 import promise from 'redux-promise-middleware';
 import { createLogger } from 'redux-logger';
 import reducers from './reducers';
-import {} from './@types';
 
 const middleware =
   process.env.NODE_ENV === 'development'
