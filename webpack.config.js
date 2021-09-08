@@ -95,6 +95,11 @@ const config = {
     new DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       'process.env.SERVER_HOST': JSON.stringify(process.env.SERVER_HOST),
+      'process.env.USER_POOL_ID': JSON.stringify(process.env.USER_POOL_ID),
+      'process.env.USER_POOL_CLIENT_ID': JSON.stringify(
+        process.env.USER_POOL_CLIENT_ID
+      ),
+      'process.env.REGION': JSON.stringify(process.env.REGION),
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/styles-[fullhash].css',
