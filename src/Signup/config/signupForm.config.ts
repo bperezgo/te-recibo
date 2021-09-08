@@ -1,4 +1,4 @@
-import { InputText, InputTextProps } from '../components/InputText';
+import { InputText, InputTextProps } from '../../lib/components/InputText';
 import { ISignupConfig } from '../interfaces/signupConfig.interface';
 
 export const SIGNUP_FORM_CONFIG: ISignupConfig<InputTextProps>[] = [
@@ -8,6 +8,7 @@ export const SIGNUP_FORM_CONFIG: ISignupConfig<InputTextProps>[] = [
       label: 'Nombre',
       id: '1',
       variant: 'outlined',
+      name: 'name',
     },
   },
   {
@@ -16,6 +17,7 @@ export const SIGNUP_FORM_CONFIG: ISignupConfig<InputTextProps>[] = [
       label: 'Email',
       id: '2',
       variant: 'outlined',
+      name: 'email',
     },
   },
   {
@@ -24,6 +26,7 @@ export const SIGNUP_FORM_CONFIG: ISignupConfig<InputTextProps>[] = [
       label: 'Número de telefono',
       id: '3',
       variant: 'outlined',
+      name: 'phoneNumber',
     },
   },
   {
@@ -33,6 +36,7 @@ export const SIGNUP_FORM_CONFIG: ISignupConfig<InputTextProps>[] = [
       label: 'Password',
       id: '4',
       variant: 'outlined',
+      name: 'password',
     },
   },
 ];
